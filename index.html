@@ -121,8 +121,8 @@
   }
   .hero h1 em{color:var(--pink);font-style:italic;}
   .hero p.tagline{
-    max-width:36rem;margin:1.6rem auto 0;
-    font-size:1.05rem;color:var(--cream);opacity:.85;
+    max-width:42rem;margin:1.6rem auto 0;
+    font-size:1.02rem;line-height:1.65;color:var(--cream);opacity:.85;
     position:relative;
   }
   .hero .star-row{color:var(--mauve);opacity:.9;}
@@ -295,8 +295,9 @@
     background:var(--plum);color:var(--cream);padding:6.5rem 0;
   }
   .about-grid{
-    display:grid;grid-template-columns:.7fr 1.3fr;gap:3.5rem;align-items:center;
+    display:grid;grid-template-columns:.7fr 1.3fr;gap:3.5rem;align-items:start;
   }
+  .about-photo{position:sticky;top:6.5rem;}
   .about-photo img{
     border-radius:3px;filter:grayscale(.1);
     box-shadow:0 30px 60px -20px rgba(0,0,0,.5);
@@ -304,10 +305,6 @@
   .about-text .eyebrow{color:var(--mauve);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;}
   .about-text h2{font-size:clamp(1.9rem,4vw,2.5rem);margin:.6rem 0 1.2rem;}
   .about-text p{opacity:.88;margin-bottom:1rem;font-size:.97rem;}
-  .edit-note{
-    font-size:.78rem;color:var(--lavender);border-left:2px solid var(--pink);
-    padding-left:.9rem;margin-top:1.4rem;opacity:.85;
-  }
   .social-row{display:flex;gap:1.2rem;margin-top:1.8rem;flex-wrap:wrap;}
   .social-row a{
     border:1px solid var(--lavender);padding:.6rem 1.3rem;border-radius:20px;
@@ -326,6 +323,7 @@
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:820px){
     .featured-grid,.about-grid,.modal-body{grid-template-columns:1fr;}
+    .about-photo{position:static;}
     .modal-cover{padding:1.4rem;}
     .modal-cover img{max-height:340px;}
     .nav-social{display:none;}
@@ -360,7 +358,7 @@
   <span class="hero-eyebrow">Autora</span>
   <h1 class="display">Nicole <em>Oliveira</em></h1>
   <div class="star-row">✦ ✦ ✦ ✦ ✦</div>
-  <p class="tagline">Romances que nascem no meio do caos — fantasias élficas, comédias românticas e histórias sáficas escritas com sangue, sarcasmo e um pouco de magia.</p>
+  <p class="tagline">Não prometo livros que vão transformar quem você é.<br>Prometo personagens que vão morar na sua cabeça, romances que vão fazer você surtar, boas risadas e algumas horas longe da realidade. Se você perder o ponto do ônibus, virar a noite dizendo "só mais um capítulo" ou esquecer dos próprios problemas por um tempinho... meu trabalho está feito.</p>
   <span class="scroll-cue">toque em um livro para explorar ↓</span>
 </header>
 
@@ -418,9 +416,12 @@
     <div class="about-text">
       <span class="eyebrow">Quem sou eu</span>
       <h2 class="display">Sobre a autora</h2>
-      <p>Nicole Oliveira escreve romances que misturam magia, humor e um tanto de caos — de fantasias élficas a comédias românticas ambientadas no Brasil real, sempre com protagonistas que sentem demais e desistem pouco.</p>
-      <p>São seis histórias publicadas até aqui, algumas em parceria com outras autoras, todas nascidas da vontade de contar o tipo de romance que ela mesma ama ler: sáfico, sincero e um pouco intenso.</p>
-      <p class="edit-note">Este parágrafo é um rascunho — me manda sua bio de verdade (formação, prêmios, curiosidades, o que quiser destacar) que eu troco certinho.</p>
+      <p>Nicole Oliveira é escritora, leitora crítica e profissional do mercado editorial. Nascida na Baixada Fluminense e criada em São José dos Campos (SP), encontrou na literatura sua principal forma de contar histórias depois de passar pela televisão como apresentadora, pelo jornal como colunista do O Vale e pela criação de conteúdo nas redes sociais.</p>
+      <p>Autora de cinco romances publicados de forma independente, já ultrapassou 7 milhões de páginas lidas, vendeu mais de 20 mil e-books na Amazon e centenas de exemplares físicos para leitores de todo o Brasil. Seus livros esgotaram nas Bienais do Livro de São Paulo (2024) e do Rio de Janeiro (2025), consolidando sua trajetória no mercado editorial.</p>
+      <p>Em 2026, deu um novo passo na carreira com <em>Altarin</em>, sua primeira publicação pelo mercado editorial tradicional, lançada pela Neon, selo jovem da Buzz Editora.</p>
+      <p>Além da escrita, atua desde 2023 como leitora crítica e diagramadora de e-books, tendo participado do desenvolvimento editorial de mais de 45 obras e diagramado mais de 15 livros digitais, tanto de forma independente quanto pelo Projeto Aurora.</p>
+      <p>Virginiana, nascida nos anos 90 e eternamente presa às comédias românticas dos anos 2000, divide sua playlist entre pop punk, Taylor Swift e musicais da Broadway. É apaixonada por tatuagens old school, filmes slasher de procedência duvidosa e por criar histórias capazes de arrancar risadas, suspiros e algumas noites mal dormidas.</p>
+      <p>Vive com três gatos antipáticos, dois filhos que já sabem que ela nunca sai de casa sem um Kindle na bolsa e um marido que continua sendo o primeiro leitor de tudo o que ela escreve.</p>
       <div class="social-row">
         <a href="https://www.instagram.com/eagoragemeos/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@eagoragemeos" target="_blank" rel="noopener">TikTok</a>
